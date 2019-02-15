@@ -10,3 +10,9 @@ class Sms(models.Model):
     time = models.DateTimeField('время', blank=True, null=True)
     state = models.TextField('состояние', max_length=20, blank=True, null=True)
 
+    class Meta:
+        verbose_name = 'SMS сообщение'
+        verbose_name_plural = 'SMS сообщения'
+
+    def __str__(self):
+        return f"{self._from} {self.to}"
