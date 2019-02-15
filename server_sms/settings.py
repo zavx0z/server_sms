@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'bandwidth.apps.BandwidthConfig',
+    'rest_framework',
 ]
 
 MIDDLEWARE = [

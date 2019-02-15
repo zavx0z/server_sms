@@ -15,10 +15,8 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-from bandwidth.views import index
 
 urlpatterns = [
-    path('', index, name='home'),
-    path('bandwidth/', include('bandwidth.urls')),
+    path('', include('bandwidth.urls')),
     path('admin/', admin.site.urls),
 ]
